@@ -1,0 +1,139 @@
+body{
+  background-color: white;
+}
+.top-nav{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  z-index: 200;
+}
+.top-nav.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+}
+.logo:link{
+  position: relative;
+  color: #ccc;
+  display: inline-block;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  
+}
+.logo:visited{
+  color: #ccc;
+}
+.logo:hover{
+  background-color: brown;
+}
+.logo img{
+  position: relative;
+  padding: 12px 18px;
+  width: 100px;
+  vertical-align: middle;
+}
+.topnav .icon {
+  display: none;
+}
+.topnav .icon {
+  display: none;
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 26px;
+  text-decoration: none;
+  color: #101d2c;
+}
+
+.nav-link:hover, .nav-link:focus {
+  text-decoration: none;
+  color: #101d2c;
+  border-bottom: 2px solid #0494d6;
+  background: #0497d61c;
+}
+nav {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+nav a:first-child {
+  float: left;
+  display: block;
+  text-align: left;
+}
+
+nav a:not(:first-child) {
+  float: right;
+  display: block;
+  padding: 14px 16px;
+}
+.view-container{
+  padding-top: 100px
+}
+.advert-header{
+  clear: both;
+  text-align: center;
+  background: #101d2c;
+  color: white;
+  padding: 20px;
+  width: 50%;margin: 10%;
+}
+.view{
+  clear: both;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+.mt-30 {
+  margin-top: 100px;
+}
+button{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: darkred;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999
+}
+
+button:active{
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+footer {
+  background: #0494d6;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-ul>li {
+  padding: 10px;
+}
+
+.footer-link {
+  margin: 5px;
+  text-decoration: none;
+}
+.small-text {
+  margin-bottom: 4px;
+  font-size: 26px;
+}
+.white-text {
+  color: red;
+}
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
