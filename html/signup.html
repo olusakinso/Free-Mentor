@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div class="top-nav clearfix" style="background-color: darkred;">
+        <a href="#" class="logo">
+        <img src="../images/logo.jpg" alt="logo"/>
+<div class="text" style="display: inline; font-size: 24px;">Free Mentors</div>
+      </a>
+    
+</div>
+
+  <div id="login-box">
+    <form method="GET" action="signup.html" onsubmit="return Validate()" name="vform">
+
+    <div class="left-box">
+      <h1>Sign Up</h1>
+      <div>
+      <input type="text" name="username" class="textInput" placeholder="Username"></div>
+
+      <div id="name_error" class="val_error">        
+      </div>
+      <div>
+      <input type="text" name="email" class="textInput" placeholder="Email"/></div>
+
+      <div id="email_error" class="val_error">
+      </div>
+      <div>
+      <input type="password" name="password" class="textInput" placeholder="Password"/></div>
+      <div>
+      <input type="password" name="password2" class="textInput" placeholder="Retype Password"/></div>
+          <br><br>
+      <div id="password_error" class="val_error"></div>
+      
+      <input type="submit" name="signup_button" value="Sign Up" class="btn"/>
+
+    </div>
+    <div class="right-box">
+      <span class="signinwith">Sign in with <br/> Social Network</span>
+      <button class="social facebook">Sign in with Facebook</button>
+      <button class="social twitter">Sign in with Twitter</button>
+      <button class="social google">Sign in with Google+</button>
+
+
+    </div>
+    <div class="or">OR</div>
+  </form>
+  </div>
+  <script>
+    var username = document.forms["vform"]["username"];
+var email = document.forms["vform"]["email"];
+var password = document.forms["vform"]["password"];
+var password_confirmation = document.forms["vform"]["password2"];
+
+var name_error = document.getElementById("name_error");
+var email_error = document.getElementById("email_error");
+var password_error = document.getElementById("password_error");
+var signup_button = document.getElementById("signUp");
+
+username.addEventListener("blur", nameVerify, true);
+email.addEventListener("blur", emailVerify, true);
+password.addEventListener("blur", passwordVerify, true);
+
+function Validate(){
+  if (username.value == ""){
+    username.style.border = "1px solid red";
+    name_error.textContent = "Username is required";
+    username.focus();
+    return false;
+  }
+  if (email.value == ""){
+    email.style.border = "1px solid red";
+    email_error.textContent = "Email is required";
+    email.focus();
+    return false;
+  }
+  if (password.value == ""){
+    password.style.border = "1px solid red";
+    password_error.textContent = "Password is required";
+    password.focus();
+    return false;
+  }
+
+  if (password.value != password_confirmation.value){
+    password.style.border = "1px solid red";
+    password_confirmation.style.border = "1px solid red";
+    password_error.innerHTML = "The two passwords do not match";
+    return false;
+  }
+}
+
+function nameVerify(){
+  if (username.value !=""){
+    username.style.border = "1px solid #5e6e66";
+    name_error.innerHTML = "";
+    return true;
+  }
+}
+function emailVerify(){
+  if (email.value !=""){
+    email.style.border = "1px solid #5e6e66";
+    email_error.innerHTML = "";
+    return true;
+  }
+}
+function passwordVerify(){
+  if (password.value !=""){
+    password.style.border = "1px solid #5e6e66";
+    password_error.innerHTML = "";
+    return true;
+  }
+}
+function signUp(){
+  
+}
+
+  </script>
+</body>
+</html>
