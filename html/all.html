@@ -6,215 +6,159 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>All Mentors
   </title>
-  <link rel="stylesheet" href="../css/all.css">
+  
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="top-nav clearfix" style="background-color: darkred;">
-        <a href="../index.html" class="logo">
-        <img src="../images/logo.jpg" alt="logo"/><div class="text" style="display: inline; font-size: 24px;">Free Mentors
-    </div>  </a>  
-    
+        <div class="top-nav">
+                <a href="index.html" class="logo">
+                <img src="../images/logo.jpg" alt="logo"/>
+        <div class="text" style="display: inline; font-size: 24px;">Free Mentors</div>
+              </a>
+            
     </div>
 
-    <nav class="topnav" id="every-header">
-        <a href="javascript:void(0);" class="icon" onclick="navResponsiveness();"></a>
-            <a href="../index.html" class="nav-link" style="font-size: 32px;">Sign Out</a>
-            <a href="./pending.html" class="nav-link" style="font-size: 32px;">Dashboard</a>
+    <div class="topnav" id="myTopnav">        
+            <a href="./html/signup.html" class="active">All mentors</a>
+            <a href="./html/login.html">Login</a>
             
-    </nav>
+            <a href="./html/pending.html">Dashboard</a>
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <i class="Top"></i>
+            </a>
+    </div>
+    <script>
+        function myFunction(){
+            let x = document.getElementById("myTopnav");
+            if(x.className === "topnav"){
+                x.className += " responsive";
+            } else{
+                x.className = "topnav"
+            }
+        }
+    </script>
 
     <div class="view-container">
-      <h1 class="advert-header" id="advert-title" style="margin-left: 300px; margin-top: 20px; margin-bottom: 50px;">
+      <h1 class="advert-header" id="advert-title" style="margin-top: 20px; clear: both; text-align: center; background-color: #101d2c; color: white; padding: 20px; width: 50%; margin: 50px 390px 50px;">
         All Mentors
       </h1>
 
-      <div class="container">
-              <div class="row">
-                  <ul class="house-row-ul">
-                      <li class="house-row-li">
-                              
-                          
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof. John Doe</
-                          </a>
-                      </li>
-  
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Dr. Mary Poppins</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img ">
-                                  <p class="text-wrapper">Prof. Samuel Chukwu</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof Olayinka David</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof. Biola Ogedengbe</p>
-                          </a>
-                      </li>
-                  </ul>
-              </div><br><br><br>
+      <div class="responsive">
+            <div class="gallery">
+                <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Prof David James</div>
+            </div>
+      </div>
+        
+      <div class="responsive">
+            <div class="gallery">
+                <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Dr. Sarah Paylin</div>
+            </div>
+      </div>
+    
+      <div class="responsive">
+            <div class="gallery">
+                <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Dr. Daniel Ogedengbe</div>
+            </div>
+       </div>
+    
+       <div class="responsive">
+            <div class="gallery">
+                <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Prof. Martin Tyler</div>
+            </div>
+        </div>
+            
+       <div class="responsive">
+            <div class="gallery">
+               <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Prof David James</div>
+            </div>
+        </div>
+    
+        <div class="responsive">
+            <div class="gallery">
+               <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+               </a>
+               <div class="desc">Dr. Sarah Paylin</div>
+            </div>
+        </div>
 
-              <div class="row">
-                  <ul class="house-row-ul">
-                      <li class="house-row-li">
-                              
-                          
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof. John Doe</
-                          </a>
-                      </li>
-  
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Dr. Mary Poppins</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img ">
-                                  <p class="text-wrapper">Prof. Samuel Chukwu</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof Olayinka David</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof. Biola Ogedengbe</p>
-                          </a>
-                      </li>
-                  </ul>
-              </div><br><br><br>
+        <div class="responsive">
+            <div class="gallery">
+                <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Dr. Daniel Ogedengbe</div>
+             </div>
+        </div>
 
+        <div class="responsive">
+            <div class="gallery">
+                <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Prof. Martin Tyler</div>
+            </div>
+        </div>
 
-              <div class="row">
-                  <ul class="house-row-ul">
-                      <li class="house-row-li">
-                              
-                          
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof. John Doe</
-                          </a>
-                      </li>
-  
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Dr. Mary Poppins</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img ">
-                                  <p class="text-wrapper">Prof. Samuel Chukwu</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof Olayinka David</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof. Biola Ogedengbe</p>
-                          </a>
-                      </li>
-                  </ul>
-              </div><br><br><br>
+        <div class="responsive">
+            <div class="gallery">
+                <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Prof David James</div>
+            </div>
+        </div>
+            
+        <div class="responsive">
+            <div class="gallery">
+                <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Dr. Sarah Paylin</div>
+            </div>
+        </div>
+        
+        <div class="responsive">
+            <div class="gallery">
+                <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Dr. Daniel Ogedengbe</div>
+            </div>
+        </div>
+        
+        <div class="responsive">
+            <div class="gallery">
+                <a href="#">
+                    <img src="../images/logo.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">Prof. Martin Tyler</div>
+            </div>
+        </div>
 
-
-              <div class="row">
-                  <ul class="house-row-ul">
-                      <li class="house-row-li">
-                              
-                          
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof. John Doe</
-                          </a>
-                      </li>
-  
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Dr. Mary Poppins</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img ">
-                                  <p class="text-wrapper">Prof. Samuel Chukwu</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof Olayinka David</p>
-                          </a>
-                      </li>
-                 
-                      <li class="house-row-li">
-                          <a href="./specific.html" class="house-type-a">
-                              <img src="../images/logo.jpg" alt="" class="house-row-img">
-                                  <p class="text-wrapper">Prof. Biola Ogedengbe</p>
-                          </a>
-                      </li>
-                  </ul>
-              </div>
-
-          </div>                   
-  
-          <footer class="mt-30">
-                  <div class="container">
-                      <div class="row">
-                          <div class="footer-ul-container">
-                              <ul class="footer-ul small-text white-text center-text">About Us
-                                  <li class="d-flex-col ">
-                                      <a href="" class="smallest-text white-text footer-link">Our Team</a>
-                                      <a href="" class="smallest-text white-text footer-link">Our Services</a>
-                                      <a href="" class="smallest-text white-text footer-link">Contact Us</a>
-                                      <a href="" class="smallest-text white-text footer-link">FAQs</a>
-                                  </li>
-                              </ul>
-                              
-                          </div>
-                      </div>
-                  </div>
-              </footer>
+        <div class="footer" style="height: 30px; background-color: darkred;">
+        
+                <a href="#"><p>About Us</p></a>
+                <a href="#"><p>FAQs</p></a>
+                <a href="#"><p>Contact Us</p></a>
+                
+            
+        </div>        
   
 </body>
 </html>

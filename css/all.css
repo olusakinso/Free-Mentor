@@ -80,5 +80,6 @@ nav a:not(:first-child) {
   background: #101d2c;
   color: white;
   padding: 20px;
-  width: 50%;margin: 10%;
+  width: 50%;
+  margin: 10%;
 }
