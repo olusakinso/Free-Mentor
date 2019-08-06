@@ -6,34 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Change to Mentor</title>
   <link rel="stylesheet" href="../css/change.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="top-nav clearfix" style="background-color: darkred;">
-        <a href="../index.html" class="logo">
-        <img src="../images/logo.jpg" alt="logo"/><div class="text" style="display: inline; font-size: 24px;">Free Mentors
-    </div>  </a>  
-    
-    </div>
+  <div class="top-nav">
+    <a href="../index.html" class="logo">
+      <img src="../images/logo.jpg" alt="logo"/>
+  <div class="text" style="display: inline; font-size: 24px;">Free Mentors</div>
+    </a>
 
-    <nav class="topnav" id="every-header">
-        <a href="javascript:void(0);" class="icon" onclick="navResponsiveness();"></a>
-            <a href="../index.html" class="nav-link">Sign Out</a>
-            <a href="./all.html" class="nav-link">All mentors</a>
-            <a href="./pending.html" class="nav-link">Dashboard</a>
-            
-    </nav>
+  </div>
 
-    <div class="view-container">
-      <h1 class="advert-header" id="advert-title" style="margin-left: 300px; margin-top: 20px; margin-bottom: 50px;">
-        MAKE USER MENTOR
-      </h1>
-  
+  <div class="topnav" id="myTopnav">        
+    <a href="../index.html">Home</a>
+    <a href="./all.html">All mentors</a>
+    <a href="./change.html" class="active">Dashboard(Admin)</a>
+    <a href="../index.html">Sign Out</a>
+    <a href="javascript:void(0);" onclick="myFunction()">
+      <i class="Top"></i>
+    </a>
+  </div>
 
-      <div class="view">
+  <script>
+    function myFunction(){
+      let x = document.getElementById("myTopnav");
+        if(x.className === "topnav"){
+          x.className += " responsive";
+        } else{
+          x.className = "topnav"
+        }
+    }
+  </script>
+
+      <div class="view" style="border-top: 1px solid #000;">
           <div class="main-image">
             <img src="../images/logo.jpg" alt=" " style="width: 200px; height: 200px;">
           </div>
-          <div class="details" style="font-size: 20px; margin-left: 50px; margin-top: 20px;">
+          <div class="details" style="font-size: 20px; margin-left: 150px; margin-top: 20px;">
             <p> Name: <span>James Junio</span></p>
             <p> Interst: <span>Computing</span></p>
             <p> Location: <span>Ghana</span></p>
@@ -49,24 +58,84 @@
               
             </div>
           </div>
-        </div>
-      
-        <footer class="mt-30">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-ul-container">
-                        <ul class="footer-ul small-text white-text center-text">About Us
-                            <li class="d-flex-col ">
-                                <a href="" class="smallest-text white-text footer-link">Our Team</a>
-                                <a href="" class="smallest-text white-text footer-link">Our Services</a>
-                                <a href="" class="smallest-text white-text footer-link">Contact Us</a>
-                                <a href="" class="smallest-text white-text footer-link">FAQs</a>
-                            </li>
-                        </ul>
-                        
-                    </div>
-                </div>
+        </div><br><br>
+        
+        
+
+        <div class="view" style="border-top: 1px solid #000;">
+          <div class="main-image">
+            <img src="../images/logo.jpg" alt=" " style="width: 200px; height: 200px;">
+          </div>
+          <div class="details" style="font-size: 20px; margin-left: 150px; margin-top: 20px;">
+            <p> Name: <span>James Junio</span></p>
+            <p> Interst: <span>Computing</span></p>
+            <p> Location: <span>Ghana</span></p>
+            <p> Mentored by: <span>Prof. Maurice Johnson</span></p>
+            <p> Years mentored: <span>7 yrs+</span></p>
+            <p> Achivements: <span>Multiple systems developed</span></p>
+  
+            <br>
+  
+            <div id="button">
+              <button class="btn-primary" style="font-size: 26px; background-color: darkred; color: white; cursor: pointer;">Make Mentor</button>
+
+              
             </div>
-        </footer>
+          </div>
+        </div><br><br>
+
+
+        <div class="view" style="border-top: 1px solid #000;">
+          <div class="main-image">
+            <img src="../images/logo.jpg" alt=" " style="width: 200px; height: 200px;">
+          </div>
+          <div class="details" style="font-size: 20px; margin-left: 150px; margin-top: 20px;">
+            <p> Name: <span>James Junio</span></p>
+            <p> Interst: <span>Computing</span></p>
+            <p> Location: <span>Ghana</span></p>
+            <p> Mentored by: <span>Prof. Maurice Johnson</span></p>
+            <p> Years mentored: <span>7 yrs+</span></p>
+            <p> Achivements: <span>Multiple systems developed</span></p>
+  
+            <br>
+  
+            <div id="button">
+              <button class="btn-primary" style="font-size: 26px; background-color: darkred; color: white; cursor: pointer;">Make Mentor</button>
+
+              
+            </div>
+          </div>
+        </div><br><br>
+
+
+        <div class="view" style="border-top: 1px solid #000;">
+          <div class="main-image">
+            <img src="../images/logo.jpg" alt=" " style="width: 200px; height: 200px;">
+          </div>
+          <div class="details" style="font-size: 20px; margin-left: 150px; margin-top: 20px;">
+            <p> Name: <span>James Junio</span></p>
+            <p> Interst: <span>Computing</span></p>
+            <p> Location: <span>Ghana</span></p>
+            <p> Mentored by: <span>Prof. Maurice Johnson</span></p>
+            <p> Years mentored: <span>7 yrs+</span></p>
+            <p> Achivements: <span>Multiple systems developed</span></p>
+  
+            <br>
+  
+            <div id="button">
+              <button class="btn-primary" style="font-size: 26px; background-color: darkred; color: white; cursor: pointer;">Make Mentor</button>
+
+              
+            </div>
+          </div>
+        </div><br><br>
+
+
+        <br><br><br><br><br><br><br><br><br><br><br> <br>
+        <div class="footer">
+          <a href="#"><p>About us</p></a>
+          <a href="#"><p>FAQs</p></a>
+          <a href="#"><p>Contact Us</p></a>
+      </div>
 </body>
 </html>

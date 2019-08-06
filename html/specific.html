@@ -6,22 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Specific Mentor </title>
   <link rel="stylesheet" href="../css/specific.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="top-nav clearfix" style="background-color: darkred;">
-        <a href="../index.html" class="logo">
-        <img src="../images/logo.jpg" alt="logo"/><div class="text" style="display: inline; font-size: 24px;">Free Mentors
-    </div>  </a>  
-    
-    </div>
+  <div class="top-nav">
+    <a href="../index.html" class="logo">
+    <img src="../images/logo.jpg" alt="logo"/>
+<div class="text" style="display: inline; font-size: 24px;">Free Mentors</div>
+  </a>
 
-    <nav class="topnav" id="every-header">
-        <a href="javascript:void(0);" class="icon" onclick="navResponsiveness();"></a>
-            <a href="../index.html" class="nav-link">Sign Out</a>
-            <a href="./all.html" class="nav-link">All mentors</a>
-            <a href="./pending.html" class="nav-link">Dashboard</a>
-            
-    </nav>
+</div>
+
+  <div class="topnav" id="myTopnav">        
+    <a href="../index.html">Home</a>
+    <a href="./all.html">All mentors</a>
+    <a href="./specific.html" class="active">Mentor Profile</a>
+    <a href="../index.html">Sign Out</a>
+    <a href="javascript:void(0);" onclick="myFunction()">
+      <i class="Top"></i>
+    </a>
+  </div>
+  <script>
+    function myFunction(){
+      let x = document.getElementById("myTopnav");
+        if(x.className === "topnav"){
+          x.className += " responsive";
+        } else{
+          x.className = "topnav"
+        }
+    }
+  </script>
 
     <div class="view-container">
       <h1 class="advert-header" id="advert-title" style="margin-left: 300px; margin-top: 20px; margin-bottom: 50px;">
@@ -49,24 +63,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   
-    <footer class="mt-30">
-        <div class="container">
-            <div class="row">
-                <div class="footer-ul-container">
-                    <ul class="footer-ul small-text white-text center-text">About Us
-                        <li class="d-flex-col ">
-                            <a href="" class="smallest-text white-text footer-link">Our Team</a>
-                            <a href="" class="smallest-text white-text footer-link">Our Services</a>
-                            <a href="" class="smallest-text white-text footer-link">Contact Us</a>
-                            <a href="" class="smallest-text white-text footer-link">FAQs</a>
-                        </li>
-                    </ul>
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div class="footer">
+      <a href="#"><p>About us</p></a>
+      <a href="#"><p>FAQs</p></a>
+      <a href="#"><p>Contact Us</p></a>
+  </div>
 </body>
 </html>
