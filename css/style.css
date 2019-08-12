@@ -86,6 +86,7 @@ body{
 }
 .gallery{
   border: 1px solid #ccc;
+  margin-bottom: 100px;
 }
 .gallery:hover{
   border: 1px solid #777;
@@ -107,6 +108,7 @@ body{
   float: left;
   width: 24.9999999%;
   margin-top: 90px;
+  
 }
 @media only screen and (max-width: 700px){
   .responsive{
@@ -124,19 +126,22 @@ body{
   display: table;
   clear: both;
 }
-.footer{
+
+footer{
   position: fixed;
-  left: 0;
-  bottom: 0;
+  padding: 20px;
   width: 100%;
-  background-color: darkred;
-  color: white;
+  color: #ffffff;
+  background-color: #333;
   text-align: center;
-  margin: 0px 0px 0px;
+  bottom: 0;
 }
-.footer :link{
-  font-size: 26px;
-  text-decoration: none;
+
+
+@media(max-width: 768px){
+  .gallery, .main-image, .details, #buttons, .btn-primary{
+  float: none;
   text-align: center;
-  color: white;
+  width: 100%;
+}
 }
